@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wrapper{
+	width: 100%;
+	margin-top: 30px;
+	background: #fff;
+	padding: 30px 0;
+}
+
+.slider-testimonial{
+	width: 85%;
+	max-width: 1400px;
+	margin: auto;
+}
+
+.testimonial-client{
+	margin-bottom: 15px;
+}
+
+.testimonial-client img{
+	width: 120px;
+	margin:auto;
+}
+
+.client-name{
+	font-family: "Open sans";
+	font-weight: 600;
+	text-align: center;
+}
+
+.testimonial-text{
+	padding: 10px 120px;
+}
+
+.testimonial-text p{
+	font-family: "Open sans";
+	font-size: 25px;
+	font-weight: 400;
+	font-style: italic;
+	text-align: center;
+	color: #454545;
+}
+
+@media (max-width: 767px) {
+	.testimonial-text{
+		padding: 10px 10px;
+	}
+	.testimonial-text p{
+		font-size: 20px;
+	}
+	.wrapper{
+		margin-top: 10px;
+	}
+}
+
+/*BOTON WSP*/
+.btn-wsp{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:75px;
+	right:10px;
+	background:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:35px;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+	z-index:100;
+	transition: all 300ms ease;
+	}
+	.btn-wsp:hover {
+	text-decoration: none;
+	color: #25d366;
+	background-color:#fff;
+	}
+	.icono{
+	margin-top:14px;
+	margin-left:3px;
+	}
+	@media only screen and (min-width:320px) and (max-width:768px){
+	.btn-wsp{
+	width:63px;
+	height:63px;
+		}
+	}

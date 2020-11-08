@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Prueba 3</title>
+  <title>Axis Comnins MKS</title>
 
   <!-- Bootstrap Core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -20,10 +20,26 @@
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="sss/sss.css">
+  <link rel="stylesheet" href="estilos.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="sss/sss.js"></script>
+	<script>
+	    jQuery(function($){
+	        $('.slider-testimonial').sss({
+	        	slideShow : true,
+	        	speed : 3500
+	        });
+	    });
+  </script>
+  
 </head>
 
 <body id="page-top">
+  <!--BOTON WHATSSAPP-->
+  <a href="https://api.whatsapp.com/send?phone=numero_aqui" class="btn-wsp" target="_blank">
+    <i style="margin-top: 12px;" class="fab fa-whatsapp"></i>
+  </a>
 
   <!-- Navigation -->
   <a class="menu-toggle rounded" href="#">
@@ -32,22 +48,22 @@
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
       <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Nombre de Empresa</a>
+        <a class="js-scroll-trigger" href="#page-top"><img src="img/logo-axis-2.png" alt=""></a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#page-top">Inicio</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">Conócenos</a>
+        <a class="js-scroll-trigger" href="#container-main">Conócenos</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Servicios</a>
+        <a class="js-scroll-trigger" href="#portfolio">Servicios</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Ubicación</a>
+        <a class="js-scroll-trigger" href="#testimonio">Testimonios</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contáctanos</a>
+        <a class="js-scroll-trigger" href="#contact">Ubicación</a>
       </li>
     </ul>
   </nav>
@@ -55,80 +71,93 @@
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
-      <h1 class="mb-1">Modelo de Prueba</h1>
+      <h1 class="mb-1" style="color: #009FE3;-webkit-text-stroke: .5px black;">Axis Comnins <br> <span style="color: #fff;">MKS</span> </h1>
       <h3 class="mb-5">
         <em>Es solo una referencia, se puede modificar conforme a las necesidades del cliente</em>
       </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Saber Más</a>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#container-main">Saber Más</a>
     </div>
     <div class="overlay"></div>
   </header>
 
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>Plantilla de Prueba</h2>
-          <p class="lead mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat accusamus eius beatae aliquam, sequi qui?
-            <a href="https://unsplash.com/">Unsplash</a>!</p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Lo que ofrecemos</a>
-        </div>
-      </div>
+  <!-- INICIO ACORDEON -->
+  <div id="container-main" class="container py-4">
+    <h1 class="text-center mb-4">Cónocenos</h1>
+ 
+    <div class="accordion-container">
+        <a href="#container-main" class="accordion-titulo" style="text-decoration: none;">Misión<span class="toggle-icon"></span></a>
+        <div class="accordion-content">
+            <p class="text-justify">A través de nuestra experiencia, entendimiento  y conocimiento de los diferentes procesos de las  industrias AXIS COMNINS deberá 
+              proveer soluciones dando un buen soporte en los servicios, venta de repuestos y materiales de cualquier otro competidor. Trabajando arduamente en el cumplimiento de nuestros objetivos adaptándonos
+              al cambio de la tecnología brindando la confiabilidad, eficiencia y cumplimiento con los altos estándares de seguridad, medio ambiente y calidad.</p>
+        </div>  
     </div>
-  </section>
+    
+    <div class="accordion-container">
+        <a href="#container-main" class="accordion-titulo" style="text-decoration: none;">Visión<span class="toggle-icon"></span></a>
+        <div class="accordion-content">
+            <p class="text-justify">Ser una empresa líder a nivel Mundial en  servicios y ventas a los diferentes sectores de las industrias siendo parte de solución de sus problemas y llegando ser la primera opción,
+               elección y permaneciendo  siempre en la mente del cliente.</p>
+        </div>
+    </div>
+  </div>
+  <!-- FIN ACORDEON -->
 
   <!-- Services -->
   <section class="content-section bg-primary text-white text-center" id="services">
     <div class="container">
       <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Nuestros Servicios</h3>
-        <h2 class="mb-5">Características</h2>
+        <h2 class="mb-5" style="color: #ECB807;">Nuestros Valores</h2>
       </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+      <div class="row justify-content-center">
+        <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
+            <i class="far fa-bookmark"></i>
           </span>
           <h4>
-            <strong>Responsive</strong>
+            <strong>Disciplina</strong>
           </h4>
-          <p class="text-faded mb-0">Se acopla a todo tamaño de pantalla.</p>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-pencil"></i>
+            <i class="far fa-handshake"></i>
           </span>
           <h4>
-            <strong>Rediseñado</strong>
+            <strong>Compromiso</strong>
           </h4>
-          <p class="text-faded mb-0">Lorem ipsum dolor sit amet..</p>
         </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+        <div class="col-lg-2 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="far fa-lightbulb"></i>
+          </span>
+          <h4>
+            <strong>Innovación</strong>
+          </h4>
+          <!--<p class="text-faded mb-0">Lorem, ipsum dolor.
+            <i class="fas fa-heart"></i>
+            Lorem, ipsum.</p>-->
+        </div>
+        <div class="col-lg-2 col-md-6">
           <span class="service-icon rounded-circle mx-auto mb-3">
             <i class="icon-like"></i>
           </span>
           <h4>
-            <strong>Favoritos</strong>
+            <strong>Juego Limpio</strong>
           </h4>
-          <p class="text-faded mb-0">Lorem, ipsum dolor.
-            <i class="fas fa-heart"></i>
-            Lorem, ipsum.</p>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-2 col-md-6">
           <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-mustache"></i>
+            <i class="fas fa-users"></i>
           </span>
           <h4>
-            <strong>Consultas</strong>
+            <strong>Espíritu de Equipo</strong>
           </h4>
-          <p class="text-faded mb-0">Haznos una pregunta.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Callout -->
+  <!-- Callout 
   <section class="callout">
     <div class="container text-center">
       <h2 class="mx-auto mb-5">Bienvenido a 
@@ -136,7 +165,7 @@
         nuevo Sitio Web!</h2>
       <a class="btn btn-primary btn-xl" href="">saber más</a>
     </div>
-  </section>
+  </section>-->
 
   <!-- Portfolio -->
   <section class="content-section" id="portfolio">
@@ -150,7 +179,7 @@
           <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Servicio 1</h2>
+                <h2>Mantenimiento de Maquinarias</h2>
                 <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum blanditiis voluptatibus eum.</p>
               </span>
             </span>
@@ -161,7 +190,7 @@
           <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Servicio 2</h2>
+                <h2>Reparación de Maquinarias</h2>
                 <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dolore? Porro, maiores?</p>
               </span>
             </span>
@@ -172,7 +201,7 @@
           <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Servicio 3</h2>
+                <h2>Instrumento de los diferentes Sectores</h2>
                 <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eligendi temporibus voluptates.</p>
               </span>
             </span>
@@ -183,7 +212,7 @@
           <a class="portfolio-item" href="#">
             <span class="caption">
               <span class="caption-content">
-                <h2>Servicio 4</h2>
+                <h2>Venta de Respuestos</h2>
                 <p class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis maiores eum minima.</p>
               </span>
             </span>
@@ -194,18 +223,137 @@
     </div>
   </section>
 
+  <!--INICIO EQUIPO-->
+  <section class="panel-equipo">
+      <div class="container pb-5">
+        <div>
+          <h2 class="text-center pt-5 titulo-equipo" >Nuestro Equipo</h2>
+          <div class="row justify-content-center my-4">
+              <!--team member 1-->
+              <div class="col-lg-4 col-md-6 mx-4 image-box my-4" style="max-width: 325px;">
+                  <img class="imagen-team" src="img/team-01-295x282.jpg" alt="" width="295" height="282"/>
+                  <div class="team-caption text-center my-3"><a class="link team-title" >Encarnación Miguel</a><span> | Gerente General</span></div>
+              </div>
+              
+              <!--team member 2-->
+              <div class="col-lg-4 col-md-6 mx-4 image-box my-4" style="max-width: 325px;">
+                  <img class="imagen-team" src="img/team-02-295x282.jpg" alt="" width="295" height="282"/>
+                  <div class="team-caption text-center my-3"><a class="link team-title" >Encarnación Roberto</a><span> | Jefe de Operaciones y Servicios</span></div>
+              </div>
+              <!--team member 3-->
+              <div class="col-lg-4 col-md-6 mx-4 image-box my-4" style="max-width: 325px;">
+                  <img class="imagen-team" src="img/team-03-295x282.jpg" alt="" width="295" height="282"/>
+                  <div class="team-caption text-center my-3"><a class="link team-title" >Chahua Cintia</a><span> | Ejecutivo de Ventas</span></div>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!--FIN EQUIPO-->
+
+
+  <!-- INICIO TESTIMONIO-->
+  
+  <div class="wrapper" id="testimonio">
+    <h2 class="text-center pb-5">Qué piensan nuestros clientes</h2>
+		<div class="slider-testimonial">
+			<div class="testimonial-item">
+          <div class="testimonial-client">
+            <img src="img/client.png" alt="">
+            <p class="client-name">Enrique Martínez</p>
+          </div>
+          <div class="testimonial-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, veritatis, similique! Ipsa quam vel repellendus, autem fugiat doloribus? Quam, velit.</p>
+          </div>
+			</div>
+			<div class="testimonial-item">
+          <div class="testimonial-client">
+            <img src="img/client2.png" alt="">
+            <p class="client-name">Julia Arévalo</p>
+          </div>
+          <div class="testimonial-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ad hic, consectetur excepturi vero odio quae eos ratione ipsum aliquid.</p>
+          </div>
+			</div>
+			<div class="testimonial-item">
+          <div class="testimonial-client">
+            <img src="img/client3.png" alt="">
+            <p class="client-name">Luis Huamaní</p>
+          </div>
+          <div class="testimonial-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non voluptate provident eum, itaque nihil. Minus eius nostrum, veritatis eos eum.</p>
+          </div>
+			</div>
+		</div>
+	</div>
+
+
+  <!-- FIN TESTIMONIO-->
+
+
   <!-- Call to Action -->
   <section class="content-section bg-primary text-white">
     <div class="container text-center">
-      <h2 class="mb-4">Conoce más de nosotros...</h2>
-      <a href="#" class="btn btn-xl btn-light mr-4">Nos Ubicamos</a>
-      <a href="#" class="btn btn-xl btn-dark">Saber Más</a>
+      <h2 class="pb-4">Especialistas en las siguientes marcas</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6"><p>HERRAMIENTAS DE MAESTRANZA</p></div>
+        <div class="col-lg-4 col-md-6"><p>HERRAMIENTAS MANUALES</p></div>
+        <div class="col-lg-4 col-md-12"><p>MANTENIMIENTO Y REPARACION DE MAQUINARIAS Y MATERIALES DE LOS HOSPITALES Y CLINICAS</p></div>
+      </div>
+    </div>
+    <div class="row justify-content-center caja-imagen" style="margin-right: 0px; margin-left: 0px;">
+      <div class="col-lg-2 col-md-4 mx-4 img-marca my-4">
+        <img class="imagen-marca" src="img/epiroc-min.jpg" alt=""/>
+        <p style="font-size: 1.3em;">EPIROC</p>
+      </div>
+      <div class="col-lg-2 col-md-4 mx-4 img-marca my-4">
+        <img class="imagen-marca" src="img/sandvik-min.jpeg" alt=""/>
+        <p style="font-size: 1.3em;">SANDVIK</p>
+      </div>
+      <div class="col-lg-2 col-md-4 mx-4 img-marca my-4">
+        <img class="imagen-marca" src="img/ferreyros-min.jpg" alt=""/>
+        <p style="font-size: 1.3em;">FERREYROS</p>
+      </div>
+      <div class="col-lg-2 col-md-4 mx-4 img-marca my-4">
+        <img class="imagen-marca" src="img/komatsu-min.jpg" alt=""/>
+        <p style="font-size: 1.3em;">KOMATSU</p>
+      </div>
+      <div class="col-lg-2 col-md-4 mx-4 img-marca my-4">
+        <img class="imagen-marca" src="img/puzmeister-min.jpg" alt=""/>
+        <p style="font-size: 1.3em;">PUZMEISTER</p>
+      </div>
+      <div class="col-lg-2 col-md-4 mx-4 img-marca my-4">
+        <img class="imagen-marca" src="img/normet.jpg" alt=""/>
+        <p style="font-size: 1.3em;">NORMET</p>
+      </div>
+      <div class="col-lg-2 col-md-4 mx-4 img-marca my-4">
+        <img class="imagen-marca" src="img/paus-min.jpg" alt=""/>
+        <p style="font-size: 1.3em;">PAUS</p>
+      </div>
+      <div class="col-lg-2 col-md-4 mx-4 img-marca my-4">
+        <img class="imagen-marca" src="img/resemin-min.jpg" alt=""/>
+        <p style="font-size: 1.3em;">RESEMIN</p>
+      </div>
+      <div class="col-lg-2 col-md-4 mx-4 img-marca my-4">
+        <img class="imagen-marca" src="img/atlas-copco.png" alt=""/>
+        <p style="font-size: 1.3em;">ATLAS COPCO</p>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <button type="button" class="btn btn-light" onclick="window.open('https://api.whatsapp.com/send?phone=51987462139&text=Hola!,%20quiero%20m%C3%A1s%20informaci%C3%B3n','_blank');">Clic para más Información</button>
     </div>
   </section>
 
   <!-- Map -->
-  <section id="contact" class="map">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10416.903085745616!2d-77.03703282751879!3d-12.048347655003944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8b5d5aa7eb1%3A0x16061e0b481e22aa!2sPlaza%20de%20Armas%20de%20Lima!5e0!3m2!1ses!2spe!4v1604529225602!5m2!1ses!2spe"></iframe>
+  <div class="mt-4 mb-4" id="contact">
+    <h2 class="text-center">Nos ubicamos en:</h2>
+    <p class="text-center" style="font-size: 1.2em;">MZ K1 LT16 PROYECTO PILOTO NUEVO PACHACUTEC SECTOR E GRUPO RESIDENCIAL E2 VENTANILLA - CALLAO
+    </p>
+  </div>
+  <section class="map">
+    <iframe  width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5522.408785592351!2d-77.15189105357584!3d-11.839984691335747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105d4f998204a59%3A0xaa2fd0d76bb38338!2sProyecto%20piloto%20Nuevo%20Pachac%C3%BAtec!5e0!3m2!1ses!2spe!4v1604792111031!5m2!1ses!2spe"></iframe>
     <br />
     <small>
       <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
@@ -213,30 +361,73 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer text-center">
-    <div>
-      <p class="text-center">Tus Redes Sociales aquí</p>
+  <footer class="footer text-center bg-dark">
+    <div class="row" style="width: 100%;">
+      <div class="col-md-4 pb-4">
+        <p class="text-center text-white font-italic" style="font-size: 2em;">Nuestro Equipo</p>
+        <div>
+          <div class="row justify-content-center text-white container">
+            <table class="table ml-5 text-white">
+              <thead>
+                <tr>
+
+                  <th scope="col">Gerente General</th>
+                  <th scope="col">972420088</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+
+                  <td>Jefe de Operaciones y Servicios</td>
+                  <td>996889383</td>
+                </tr>
+                <tr>
+
+                  <td>Ejecutivo de Ventas</td>
+                  <td>948604072</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-4 text-white pb-5">
+        <p class="text-center text-white font-italic" style="font-size: 2em;">Horario de Atención</p>
+        <div class="row justify-content-center">
+            <div class="col-12">Lunes a Viernes &nbsp; &nbsp;:&nbsp;&nbsp; 8am a 6pm</div>
+            <div class="col-12">Sábados &nbsp; &nbsp;:&nbsp;&nbsp; 8am a 1pm</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div>
+          <p class="text-center text-white font-italic" style="font-size: 2em;">Síguenos:</p>
+        </div>
+        <div class="container">
+          <ul class="list-inline mb-5">
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="#">
+                <i class="icon-social-facebook"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white mr-3" href="#">
+                <i class="icon-social-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="social-link rounded-circle text-white" href="#">
+                <i class="icon-social-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
     </div>
-    <div class="container">
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-facebook"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-twitter"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#">
-            <i class="icon-social-github"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="text-muted small mb-0">Derechos Reservados 2020</p>
+    <div class="container pt-5">
+      <p class="text-white small mb-0 text-footer">COPYRIGHT &#169; AXIS COMNINS MKS 2020. TODOS LOS DERECHOS RESERVADOS</p>
     </div>
+    
   </footer>
 
   <!-- Scroll to Top Button-->
